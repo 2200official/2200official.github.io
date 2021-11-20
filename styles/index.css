@@ -1,0 +1,434 @@
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  pointer-events: visible;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: inherit;
+}
+
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: 3.125vw;
+    
+  }
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Light";
+  src: url(../fonts/SpoqaHanSansNeo-Light.eot);
+  src: local(※), url(../fonts/SpoqaHanSansNeo-Light.woff) format("woff");
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3,
+    U+D7B0-D7FF;
+}
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url(../fonts/SpoqaHanSansNeo-Regular.eot);
+  src: local(※), url(../fonts/SpoqaHanSansNeo-Regular.woff) format("woff");
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3,
+    U+D7B0-D7FF;
+}
+@font-face {
+  font-family: "Arnold_Regular";
+  src: local(※), url(../fonts/Arnold_Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Arnold_Italic";
+  src: local(※), url(../fonts/Arnold_Italic.woff) format("woff");
+}
+
+@media screen and (min-width: 512px) {
+  body {
+    font-weight: 700;
+    line-height: 1.6;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Arnold_Regular", "SpoqaHanSansNeo-Regular", sans-serif;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+
+  cursor: default;
+}
+
+#logo {
+  position: fixed;
+  width: 10rem;
+  margin: 0 auto;
+  display: inline;
+  vertical-align: top;
+
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 9999 !important;
+  mix-blend-mode: lighten;
+}
+
+.box {
+  display: block;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 180px;
+}
+
+div#container {
+  padding: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+div.a {
+  width: 250px;
+  height: 250px;
+
+  position: fixed;
+}
+
+/* image animation */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  color: white;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  grid-gap: 32px;
+  grid-auto-rows: minmax(72px, auto);
+
+  word-break: keep-all;
+}
+
+figure {
+  margin-left: 1rem;
+  margin: 0.5rem 0 0 1rem;
+  min-height: 50vh;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.content-1 {
+  font-size: 0.4rem;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-left: 1rem;
+
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+.content-2 {
+  font-size: 0.4rem;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-left: 1rem;
+
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+/* // */
+
+.clock_t1 {
+  font-size: 0.5rem;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  left: 75%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+
+  color: black;
+}
+.clock_t2 {
+  font-size: 0.5rem;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  left: 26.5%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+
+  color: black;
+}
+
+.clock {
+  height: 10vw;
+  width: 10vh;
+  margin: 0 10vw 0 0vw;
+  padding-left: 32vw;
+  border-radius: 100px;
+  display: flex;
+  transform: scale(1.8);
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.clock2 {
+  height: 10vw;
+  width: 10vh;
+  border-radius: 100px;
+  margin: -10vw 0vw 0vw 10vw;
+  display: flex;
+  transform: scale(1.8);
+
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.clock__second,
+.clock__minute,
+.clock__hour,
+.clock__indicator {
+  position: absolute;
+  left: calc(150% - 1px);
+  width: 2px;
+  background: rgba(0, 0, 0, 0.5);
+
+  transform-origin: bottom center;
+
+  z-index: 2;
+  border-radius: 1px;
+}
+.clock__second {
+  height: 90px;
+  margin-top: 10px;
+  background: black;
+  transform: rotate(-12deg);
+  -webkit-animation: time 1s infinite alternate steps(60);
+  animation: time 1s infinite alternate steps(60);
+  z-index: 3;
+}
+.clock__minute {
+  height: 80px;
+  margin-top: 20px;
+  opacity: 0.75;
+  -webkit-animation: time 3600s linear infinite;
+  animation: time 3600s linear infinite;
+}
+.clock__hour {
+  height: 60px;
+  margin-top: 40px;
+  transform: rotate(-56deg);
+  -webkit-animation: time 43200s linear infinite;
+  animation: time 43200s linear infinite;
+}
+.clock__indicator {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 100%;
+  transform: translate(-50%, 0%);
+  background: none;
+}
+
+@-webkit-keyframes time {
+  to {
+    transform: rotateZ(-6deg);
+  }
+}
+
+@keyframes time {
+  to {
+    transform: rotateZ(6deg);
+  }
+}
+
+/* clock2 */
+
+.clock2__second,
+.clock2__minute,
+.clock2__hour,
+.clock2__indicator {
+  position: absolute;
+  left: calc(150% - 1px);
+  width: 2px;
+  background: rgba(0, 0, 0, 0.5);
+
+  transform-origin: bottom center;
+
+  z-index: 2;
+  border-radius: 1px;
+}
+.clock2__second {
+  height: 90px;
+  margin-top: 10px;
+  background: black;
+  -webkit-animation: time2 60s infinite steps(60);
+  animation: time2 60s infinite steps(60);
+  z-index: 3;
+}
+.clock2__minute {
+  height: 80px;
+  margin-top: 20px;
+  opacity: 0.75;
+  -webkit-animation: time2 3600s linear infinite;
+  animation: time2 3600s linear infinite;
+}
+.clock2__hour {
+  height: 60px;
+  margin-top: 40px;
+  transform: rotate(-56deg);
+  -webkit-animation: time2 43200s linear infinite;
+  animation: time2 43200s linear infinite;
+}
+.clock2__indicator {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 100%;
+  transform: translate(-50%, 0%);
+  background: none;
+}
+
+@-webkit-keyframes time2 {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes time2 {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
